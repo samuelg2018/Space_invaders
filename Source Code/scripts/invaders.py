@@ -51,7 +51,7 @@ class Invader:
                     self.invaders[i].x -= self.move_distance
             else:
                 for i in range(len(self.invaders)):
-                    self.invaders[i].y += 15
+                    self.invaders[i].y += 20
                     self.invaders[i].orientation = "right"
 
         elif self.orientation == "right":
@@ -60,7 +60,7 @@ class Invader:
                     self.invaders[j].x += self.move_distance
             else:
                 for j in range(len(self.invaders)):
-                    self.invaders[j].y += 15
+                    self.invaders[j].y += 20
                     self.invaders[j].orientation = "left"
 
     def draw(self):
